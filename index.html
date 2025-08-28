@@ -3,21 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de robótica</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Site de Robótica Educacional</title>
+    <style>
+        /* Estilos gerais da página */
+        body { 
+            color: white; /* Define a cor do texto como branco */
+            background-color: black; /* Define o fundo da página como preto */
+            margin: 100px; /* Adiciona margem de 100px em todos os lados */
+            font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+            margin-bottom: 1000px; /* Margem inferior maior para permitir scroll */
+            margin-top: 10px; /* Margem superior reduzida para 10px */
+        }
+
+        /* Estilos para a seção principal */
+        .chamada {
+            background: rgb(184, 146, 213); /* Cor de fundo lilás para a seção */
+            padding-bottom: 80px; /* Espaçamento interno inferior de 80px */
+            padding-top: 80px; /* Espaçamento interno superior de 80px */
+            display: flex; /* Ativa o modelo de layout flexbox */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza os itens verticalmente */
+            gap: 40px; /* Adiciona espaçamento entre os elementos */
+        }
+
+        /* Estilos para o container de texto */
+        .chamada-texto {
+            margin-right: 5%; /* Margem direita de 5% para separar do vídeo */
+            max-width: 500px; /* Largura máxima para melhor leitura */
+        }
+
+        /* Estilos para o título principal */
+        h1 {
+            font-size: 40px; /* Tamanho de fonte grande para destaque */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+
+        /* Estilos para os parágrafos */
+        p {
+            font-size: 20px; /* Tamanho de fonte aumentado para legibilidade */
+            margin-bottom: 15px; /* Espaçamento entre parágrafos */
+        }
+
+        /* Estilos para o header */
+        header {
+            text-align: center; /* Centraliza o texto */
+            font-size: 32px; /* Tamanho de fonte maior */
+            font-weight: bold; /* Texto em negrito */
+            padding: 20px; /* Adiciona espaçamento interno */
+            background: #333; /* Cor de fundo escura */
+            margin-bottom: 30px; /* Espaçamento abaixo do header */
+        }
+
+        /* Estilos responsivos para dispositivos menores */
+        @media (max-width: 968px) {
+            .chamada {
+                flex-direction: column; /* Empilha os elementos verticalmente */
+                text-align: center; /* Centraliza o texto */
+                padding: 40px 20px; /* Ajusta o padding para mobile */
+            }
+            
+            .chamada-texto {
+                margin-right: 0; /* Remove a margem direita */
+                margin-bottom: 30px; /* Adiciona margem inferior */
+            }
+            
+            iframe {
+                width: 100%; /* Vídeo ocupa toda a largura */
+                max-width: 550px; /* Limite máximo de largura */
+                height: auto; /* Altura automática */
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>Soluções robóticas</header>
+    <header>Soluções Robóticas</header>
     <section class="chamada">
-        <div class="chamda-texto">
+        <div class="chamada-texto">
             <h1>Trabalhando com Robótica Educacional</h1>
-            <p>#os melhores vídeos que podemos arrumar sobre robótica</p>
-            <p>FIQUE ATENTO PARA AS MODIFICAÇÕES</p>
+            <p>#Os melhores vídeos que podemos encontrar sobre robótica</p>
+            <p>FIQUE ATENTO PARA AS ATUALIZAÇÕES</p>
         </div>
  
-        <div>
-            <iframe width="550" height="315" src="https://www.youtube.com/embed/LVDnvVUGwV0?si=ah1BZaUxp3INCiKL" title="Youtube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <div class="video-container">
+            <iframe width="550" height="315" src="https://www.youtube.com/embed/LVDnvVUGwV0?si=ah1BZaUxp3INCiKL" title="Player de Vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 </body>
