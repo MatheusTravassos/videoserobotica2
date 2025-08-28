@@ -3,111 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Robótica Educacional</title>
-    <style>
-        /* Estilos gerais da página */
-        body { 
-            color: white; /* Define a cor do texto como branco */
-            background-color: black; /* Define o fundo da página como preto */
-            margin: 100px; /* Adiciona margem de 100px em todos os lados */
-            font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-            margin-bottom: 1000px; /* Margem inferior maior para permitir scroll */
-            margin-top: 10px; /* Margem superior reduzida para 10px */
-        }
-
-        /* Estilos para a seção principal */
-        .chamada {
-            background: rgb(184, 146, 213); /* Cor de fundo lilás para a seção */
-            padding-bottom: 80px; /* Espaçamento interno inferior de 80px */
-            padding-top: 80px; /* Espaçamento interno superior de 80px */
-            display: flex; /* Ativa o modelo de layout flexbox */
-            justify-content: center; /* Centraliza os itens horizontalmente */
-            align-items: center; /* Centraliza os itens verticalmente */
-            gap: 40px; /* Adiciona espaçamento entre os elementos */
-        }
-
-        /* Estilos para o container de texto */
-        .chamada-texto {
-            margin-right: 5%; /* Margem direita de 5% para separar do vídeo */
-            max-width: 500px; /* Largura máxima para melhor leitura */
-        }
-
-        /* Estilos para o título principal */
-        h1 {
-            font-size: 40px; /* Tamanho de fonte grande para destaque */
-            margin-bottom: 20px; /* Espaçamento abaixo do título */
-        }
-
-        /* Estilos para os parágrafos */
-        p {
-            font-size: 20px; /* Tamanho de fonte aumentado para legibilidade */
-            margin-bottom: 15px; /* Espaçamento entre parágrafos */
-        }
-
-        /* Estilos para o header */
-        header {
-            text-align: center; /* Centraliza o texto */
-            font-size: 32px; /* Tamanho de fonte maior */
-            font-weight: bold; /* Texto em negrito */
-            padding: 20px; /* Adiciona espaçamento interno */
-            background: #333; /* Cor de fundo escura */
-            margin-bottom: 30px; /* Espaçamento abaixo do header */
-        }
-
-        /* Estilos responsivos para dispositivos menores */
-        @media (max-width: 968px) {
-            .chamada {
-                flex-direction: column; /* Empilha os elementos verticalmente */
-                text-align: center; /* Centraliza o texto */
-                padding: 40px 20px; /* Ajusta o padding para mobile */
-            }
-            
-            .chamada-texto {
-                margin-right: 0; /* Remove a margem direita */
-                margin-bottom: 30px; /* Adiciona margem inferior */
-            }
-            
-            iframe {
-                width: 100%; /* Vídeo ocupa toda a largura */
-                max-width: 550px; /* Limite máximo de largura */
-                height: auto; /* Altura automática */
-            }
-        }
-    </style>
+    <title>Site de Robótica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>Soluções Robóticas</header>
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>Trabalhando com Robótica Educacional</h1>
-            <p>#Os melhores vídeos que podemos encontrar sobre robótica</p>
-            <p>FIQUE ATENTO PARA AS ATUALIZAÇÕES</p>
-        </div>
- 
-        <div class="video-container">
-            <iframe width="550" height="315" src="https://www.youtube.com/embed/LVDnvVUGwV0?si=ah1BZaUxp3INCiKL" title="Player de Vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section class="categoria">
-        <h2>O MELHOR DA ROBÓTICA ESTÁ AQUI</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=admjB15l00g">
-            <img src="https://img.youtube,com/vi/admjB15l00g/maxresdefault.jpg" />
-            </a>    
-         <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-            <img src="https://img.youtube,com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
-         </a>
-         <a href= "https://www.youtube.com/watch?v=FvRmEapoHRc"/>
-            <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" /> 
-         </a>
-         <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw"/>
-             <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg"/>
-         </a>
-         <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-             <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg"/>
-         </a>
-        </div>
-    </section>
-    
-</body>
-</html>
+<body> <!-- Início do corpo da página -->
+
+  <header>Soluções Robóticas</header> <!-- Cabeçalho da página com o nome do site -->
+
+  <section class="chamada"> <!-- Seção principal com texto e vídeo -->
+
+    <div class="chamada-texto"> <!-- Div com o conteúdo textual da chamada -->
+      <h1>Trabalhando com Robótica Educacional</h1> <!-- Título principal da seção -->
+      <p>#os melhores vídeos que podemos arrumar sobre robótica</p> <!-- Parágrafo com frase de destaque -->
+      <p>FIQUE ATENTO PARA AS MODIFICAÇÕES</p> <!-- Parágrafo com aviso para os visitantes -->
+    </div>
+
+    <div> <!-- Div para conter o vídeo -->
+      <figure> <!-- Elemento semântico que agrupa vídeo e legenda -->
+        <iframe width="550" height="315" src="https://www.youtube.com/embed/LVDnvVUGwV0?si=ah1BZaUxp3INCiKL" title="Youtube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Vídeo explicativo sobre robótica educacional</figcaption> <!-- Legenda abaixo do vídeo -->
+      </figure>
+    </div>
+
+  </section> <!-- Fim da seção chamada -->
+
+  <section class="categoria"> <!-- Seção com os vídeos em miniatura -->
+    <h2>O MELHOR DA ROBÓTICA ESTA AQUI</h2> <!-- Título da seção de categorias -->
+
+    <div class="categoria-videos"> <!-- Container flexível com miniaturas dos vídeos -->
+
+      <a href="https://www.youtube.com/watch?v=admjB15l00g"> <!-- Link para vídeo 1 -->
+        <img src="https://img.youtube.com/vi/admjB15l00g/maxresdefault.jpg"/> <!-- Miniatura automática do vídeo -->
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8"> <!-- Link para vídeo 2 -->
+        <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg"/> <!-- Miniatura do vídeo -->
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=FvRmEapoHRc"> <!-- Link para vídeo 3 -->
+        <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg"/> <!-- Miniatura do vídeo -->
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw"> <!-- Link para vídeo 4 -->
+        <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg"/> <!-- Miniatura do vídeo -->
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=d4DzMNGoyis"> <!-- Link para vídeo 5 -->
+        <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg"/> <!-- Miniatura do vídeo -->
+      </a>
+
+    </div> <!-- Fim do container de vídeos -->
+  </section> <!-- Fim da seção de categorias -->
+
+</body> <!-- Fim do corpo da página -->
+</html> <!-- Fim do documento HTML -->
